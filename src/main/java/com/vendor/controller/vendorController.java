@@ -34,6 +34,7 @@ public class vendorController {
 	@GetMapping("/getvendor/{vendorId}")
 	public ResponseEntity<vendorModel> getvendor(@PathVariable int vendorId)
 	{
+		//
 		return vendorService.getvendor(vendorId);
 	}
 	@PutMapping("/updatevendor")
